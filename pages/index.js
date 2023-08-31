@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+// import Input from "react-validation/build/input"
 import styles from '@/styles/Home.module.css'
+import Swipe from './components/swipe.js'
+import React from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -117,6 +120,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <Swipe />
       </main>
     </>
   )
