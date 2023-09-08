@@ -1,4 +1,3 @@
-import '@/styles/globals.css'
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 
