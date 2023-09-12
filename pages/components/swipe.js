@@ -10,7 +10,10 @@ import React, { useState } from "react"
 
 
 export default function Swipe() {
-
+  const [index, setIndex] = useState(0)
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex)
+  }
 
 
     return (<>
@@ -19,38 +22,41 @@ export default function Swipe() {
             <title>Swipe Page</title>
         </Head>
 
-        <Carousel>
-            <Carousel.Item interval={9999}>
+        <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
+            <Carousel.Item >
                 <img
                     className="d-block w-100"
-                    src="https://as1.ftcdn.net/v2/jpg/01/41/12/10/1000_F_141121004_IpVWZBqHwvqIrMhJcohvDCM0D7S1NqkW.jpg"
+                    src="https://pbs.twimg.com/media/FYb32DnaAAA3mq5?format=jpg&name=900x900"
                     alt="First slide"
+                    height="700px"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Yanapii</h3>
+                    <p>Green Cozy cat looking to make friends.</p>
                 </Carousel.Caption>
                 </Carousel.Item>
-            <Carousel.Item interval={9999}>
+            <Carousel.Item interval={null}>
                 <img
                   className="d-block w-100"
                   src="https://i.stack.imgur.com/VJBJq.png"
                   alt="Second slide"
+                  height="700px"
                 />
                 <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3>Yanapii</h3>
+                  <p>Green Cozy cat looking to make friends.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={9999}>
+            <Carousel.Item interval={null}>
               <img
                 className="d-block w-100"
                 src="https://as1.ftcdn.net/v2/jpg/01/41/11/64/1000_F_141116428_V5guspEHFFY0a9VvpEiC0QUHDbYyoDD9.jpg"
                 alt="Third slide"
+                height="700px"
               />
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Yanapii</h3>
+                <p>Green Cozy cat looking to make friends.</p>
               </Carousel.Caption>
             </Carousel.Item>
         </Carousel> 
