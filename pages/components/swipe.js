@@ -10,6 +10,8 @@ import React, { useState } from "react"
 
 
 export default function Swipe() {
+
+
   const [index, setIndex] = useState(0)
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex)
@@ -22,13 +24,15 @@ export default function Swipe() {
             <title>Swipe Page</title>
         </Head>
 
-        <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
+        <Carousel slide={false} data-bs-touch="true" interval={null} activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item >
                 <img
                     className="d-block w-100"
                     src="https://pbs.twimg.com/media/FYb32DnaAAA3mq5?format=jpg&name=900x900"
                     alt="First slide"
                     height="700px"
+                    object-fit="cover"
+                    overflow="visible"
                 />
                 <Carousel.Caption>
                     <h3>Yanapii</h3>
@@ -54,7 +58,7 @@ export default function Swipe() {
                 alt="Third slide"
                 height="700px"
               />
-              <Carousel.Caption>
+              <Carousel.Caption >
                 <h3>Yanapii</h3>
                 <p>Green Cozy cat looking to make friends.</p>
               </Carousel.Caption>
