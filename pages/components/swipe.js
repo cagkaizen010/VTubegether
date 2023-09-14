@@ -38,7 +38,7 @@ export default function Swipe() {
                     <h3>Yanapii</h3>
                     <p>Green Cozy cat looking to make friends.</p>
                 </Carousel.Caption>
-                </Carousel.Item>
+            </Carousel.Item>
             <Carousel.Item interval={null}>
                 <img
                   className="d-block w-100"

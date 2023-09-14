@@ -6,7 +6,7 @@ export default function Frame() {
         <div id="scroll-container">
             <h1 align="center">VTubeGether</h1>
             <Swipe/>
-            <Buttons />
+            <Buttons style={{flex: 1}}/>
         </div>
         </>
     )
