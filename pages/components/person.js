@@ -1,39 +1,37 @@
-import {CarouselView} from "./carouselView.js"
-
+import CarouselView from "./carouselView.js"
+// import { Carousel } from "react-bootstrap";
 const person = [
     {
-        name: "Yanapii",
-        cellName: 'Yanapii',
-        desc: "Green cozy cat looking to make friends.",
-        pic: [
-            "https://pbs.twimg.com/media/FYb32DnaAAA3mq5?format=jpg&name=900x900",
-            "https://i.stack.imgur.com/VJBJq.png",
-            "https://as1.ftcdn.net/v2/jpg/01/41/11/64/1000_F_141116428_V5guspEHFFY0a9VvpEiC0QUHDbYyoDD9.jpg"
-        ]
+      name: "Yanapii",
+      // cellName: 'Yanapii',
+      desc: "Green cozy cat looking to make friends.",
+      pic: [
+        "https://pbs.twimg.com/media/FYb32DnaAAA3mq5?format=jpg&name=900x900",
+        "https://i.ytimg.com/vi/aZCkIDgG8Ek/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLCoe4GwJzzpn3pbQgY1gZsZkRVmmw",
+        "https://i.ytimg.com/vi/H1Hphla0MMA/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLAGbp7vrNBvyLvWOBHRmCABVOC4ig"
+      ]
     },
-];
+    {
+      name: "Yuandere",
+      desc: "Go fuck yourself",
+      pic: ["https://cdna.artstation.com/p/assets/images/images/043/718/548/smaller_square/yuandere-werewolf-jpg.jpg?1638094099"]
+    }
+  ]
 
-const Person = () => {
 
-    {person.map((
-      {
-        name,
-        cellName,
-        desc,
-        pic
-      }, i
-    ) => (
-        <CarouselView 
-          key={cellName}
-          name={name}
-          id = {i}
-          desc={desc}
-          pic={pic}
-        />
-      )
-    )}
     
-    
+function Person() {
+  return (
+     
+     <CarouselView 
+          {...person[0]}
+      />
+
+  )
 }
 
 export default Person;
+
+
+
+

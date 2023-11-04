@@ -15,14 +15,13 @@ export default function Buttons(){
     }
 
     return (
-    <>
-        <div className=" " >
-            <Button onClick={updateYes} size="lg" >X</Button>
-            {/* git test */}
+    
+        <div className="d-grid gap-2" >
+            <Button variant="primary" onClick={updateYes} size="lg" >X</Button>
         
-            <Button onClick={updateNo} size="lg">O</Button>
+            <Button variant="secondary" onClick={updateNo} size="lg">O</Button>
         </div>
-    </>
+   
     )
 
 }

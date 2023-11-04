@@ -11,24 +11,18 @@ import React, { useState } from "react"
 
 export default function Swipe() {
 
-
   const [index, setIndex] = useState(0)
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex)
   }
 
+  return (
+    <>
 
-    return (<>
-
-        <Head>
-            <title>Swipe Page</title>
-        </Head>
-
-        <Person/>
-        
+       <Person/>
 
 
-        
-    </>)
+    </>
+  )
 
 }
