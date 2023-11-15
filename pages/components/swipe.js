@@ -18,8 +18,10 @@ export default function Swipe() {
 
   return (
     <>
+      <div height="700px">
 
        <Person/>
+      </div>
 
 
     </>
