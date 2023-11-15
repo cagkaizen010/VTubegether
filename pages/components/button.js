@@ -16,10 +16,13 @@ export default function Buttons(){
 
     return (
     
-        <div className="d-grid gap-2" >
+        // <div className="btn-group w-50 " >
+        <div className="btn-group  d-flex justify-content-center" >
+         {/* <div className="btn-group"> */}
+
             <Button variant="primary" onClick={updateYes} size="lg" >X</Button>
-        
             <Button variant="secondary" onClick={updateNo} size="lg">O</Button>
+         {/* </div> */}
         </div>
    
     )

@@ -10,7 +10,7 @@ function carouselView(props) {
                     className="d-block w-100"
                     background-image= "black"
                     src={props.pic[0]}
-                    height="700px"
+                    // height="700px"
                     width="100%"
                     alt="First slide"
                     object-fit="cover"
